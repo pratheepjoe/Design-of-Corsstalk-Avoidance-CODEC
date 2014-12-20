@@ -1,0 +1,50 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ftc_enc_top
+Version: D-2010.03-SP3
+Date   : Sun Dec  7 19:56:41 2014
+****************************************
+
+Operating Conditions: bc_1.05V_125C   Library: CLOCK65LPSVT
+Wire Load Model Mode: enclosed
+
+  Startpoint: data_in[1] (input port clocked by clk)
+  Endpoint: data_out_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ftc_enc_top        wl_zero               CLOCK65LPSVT
+  ftc_enc_0          area_0Kto1K           CLOCK65LPSVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  data_in[1] (in)                                         0.00       0.00 r
+  enc1/data_in[1] (ftc_enc_0)                             0.00       0.00 r
+  enc1/U8/Z (HS65_LS_CNXOR2X38)                           0.09       0.09 f
+  enc1/U4/Z (HS65_LS_CNNOR2X15)                           0.02       0.11 r
+  enc1/data_out[1] (ftc_enc_0)                            0.00       0.11 r
+  data_out_reg[1]/D (HS65_LS_CNSDFPRQTX15)                0.00       0.11 r
+  data arrival time                                                  0.11
+
+  clock clk (rise edge)                                   0.30       0.30
+  clock network delay (ideal)                             0.00       0.30
+  data_out_reg[1]/CP (HS65_LS_CNSDFPRQTX15)               0.00       0.30 r
+  library setup time                                     -0.13       0.17
+  data required time                                                 0.17
+  --------------------------------------------------------------------------
+  data required time                                                 0.17
+  data arrival time                                                 -0.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+

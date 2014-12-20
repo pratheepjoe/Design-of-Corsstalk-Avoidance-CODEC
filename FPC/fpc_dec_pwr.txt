@@ -1,0 +1,46 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpc_dec_top
+Version: D-2010.03-SP3
+Date   : Sun Dec  7 19:47:51 2014
+****************************************
+
+
+Library(s) Used:
+
+    CLOCK65LPSVT (File: /tools/pdks/c65/CLOCK65LPSVT_3.1/libs/CLOCK65LPSVT_bc_1.05V_125C.db)
+
+
+Operating Conditions: bc_1.05V_125C   Library: CLOCK65LPSVT
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpc_dec_top            wl_zero           CLOCK65LPSVT
+fpc_dec_0              wl_zero           CLOCK65LPSVT
+fpc_dec_1              wl_zero           CLOCK65LPSVT
+fpc_dec_2              wl_zero           CLOCK65LPSVT
+fpc_dec_3              wl_zero           CLOCK65LPSVT
+fpc_dec_4              wl_zero           CLOCK65LPSVT
+fpc_dec_5              wl_zero           CLOCK65LPSVT
+fpc_dec_6              wl_zero           CLOCK65LPSVT
+fpc_dec_7              wl_zero           CLOCK65LPSVT
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   2.7982 mW   (88%)
+  Net Switching Power  = 384.3062 uW   (12%)
+                         ---------
+Total Dynamic Power    =   3.1825 mW  (100%)
+
+Cell Leakage Power     =  36.6665 uW
+

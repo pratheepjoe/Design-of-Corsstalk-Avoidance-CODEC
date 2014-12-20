@@ -1,0 +1,24 @@
+****************************************
+Report : area
+Design : ftc_enc_top
+Version: D-2010.03-SP3
+Date   : Sun Dec  7 19:57:18 2014
+****************************************
+
+Library(s) Used:
+
+    CLOCK65LPSVT (File: /tools/pdks/c65/CLOCK65LPSVT_3.1/libs/CLOCK65LPSVT_bc_1.05V_125C.db)
+
+Number of ports:               78
+Number of nets:               300
+Number of cells:              143
+Number of references:          13
+
+Combinational area:        537.679986
+Noncombinational area:    1327.039993
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          1864.719979
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)

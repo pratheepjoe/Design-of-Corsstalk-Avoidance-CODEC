@@ -1,0 +1,57 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : fpc_dec_top
+Version: D-2010.03-SP3
+Date   : Sun Dec  7 19:47:12 2014
+****************************************
+
+Operating Conditions: bc_1.05V_125C   Library: CLOCK65LPSVT
+Wire Load Model Mode: enclosed
+
+  Startpoint: data_in[13]
+              (input port clocked by clk)
+  Endpoint: data_out_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpc_dec_top        wl_zero               CLOCK65LPSVT
+  fpc_dec_6          wl_zero               CLOCK65LPSVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  data_in[13] (in)                                        0.00       0.00 f
+  dec3/data_in[3] (fpc_dec_6)                             0.00       0.00 f
+  dec3/U4/Z (HS65_LS_CNIVX27)                             0.01       0.01 r
+  dec3/U43/Z (HS65_LS_CNNAND2X18)                         0.01       0.02 f
+  dec3/U19/Z (HS65_LS_CNIVX7)                             0.02       0.04 r
+  dec3/U48/Z (HS65_LS_CNMUX21X15)                         0.06       0.10 r
+  dec3/U46/Z (HS65_LS_CNNAND2X18)                         0.02       0.12 f
+  dec3/U14/Z (HS65_LS_CNIVX3)                             0.02       0.14 r
+  dec3/U54/Z (HS65_LS_CNNAND2AX18)                        0.04       0.18 r
+  dec3/data_out_tri[1]/output (**TSGEN**)                 0.00       0.18 r
+  dec3/data_out[1] (fpc_dec_6)                            0.00       0.18 r
+  data_out_reg[9]/D (HS65_LS_CNSDFPRQTX15)                0.00       0.18 r
+  data arrival time                                                  0.18
+
+  clock clk (rise edge)                                   0.30       0.30
+  clock network delay (ideal)                             0.00       0.30
+  data_out_reg[9]/CP (HS65_LS_CNSDFPRQTX15)               0.00       0.30 r
+  library setup time                                     -0.12       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
